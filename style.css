@@ -1,156 +1,184 @@
 .html,
 .body {
-  height: 1400px;
-  background-color: burlywood;
+  background-color: lightskyblue;
 }
 
-.otherHtml,
-.otherBody {
-  background-color: crimson;
-}
-
-.donateMessage {
-  margin-top: 300px;
-  color: white;
-}
-
-.heading {
-  text-align: center;
+.header {
   font-size: 32pt;
   color: black;
-}
-
-.smallHeading {
+  text-shadow: 4px 4px lightyellow;
   text-align: center;
-  font-size: 22pt;
-  color: black;
 }
 
-.horizontal {
+.horiz {
   border: 2px solid black;
   border-radius: 7px;
 }
 
-.mainBox {
-  margin-top: 30px;
-  width: 80%;
-  height: 300px;
-  background-color: whitesmoke;
-  border: 3px solid black;
-  box-shadow: 15px 15px 10px black;
+.arg {
+  width: 440px;
+  height: auto;
 }
 
-.mission {
-  width: 900px;
-  text-align: center;
-  position: absolute;
-  top: 204px;
-  left: 252px;
-}
-
-.box {
-  margin-left: 20px;
-  margin-top: 60px;
-  width: 30%;
-  height: 50px;
-  background-color: whitesmoke;
-  border: 2px solid black;
-  box-shadow: 10px 10px 5px black;
-}
-
-.donateButton {
-  color: whitesmoke;
+.text1 {
+  color: lightyellow;
+  background-color: black;
+  border: 2px solid white;
+  padding: 15px;
+  text-align: justify;
   font-size: 12pt;
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  width: 150px;
-  height: 50px;
-  background-color: crimson;
-  border: 5px solid black;
-  border-radius: 15px;
-}
-
-.donateButton:hover {
-  cursor: pointer;
-}
-
-.donateButton:active {
-  transform: scale(0.97);
-  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
-}
-
-.topic1 {
   position: absolute;
-  top: 450px;
-  left: 50px;
+  left: 15px;
+  top: 160px;
+  width: 400px;
 }
 
-.topic2 {
+.text2 {
+  color: lightyellow;
+  background-color: black;
+  border: 2px solid white;
+  padding: 15px;
+  text-align: justify;
+  font-size: 12pt;
   position: absolute;
-  top: 750px;
-  right: 50px;
+  right: 15px;
+  top: 175px;
+  width: 400px;
 }
 
-.topic3 {
-  position: absolute;
-  top: 1050px;
-  left: 50px;
+.tableHeader {
+  background-color: black;
+  color: lightyellow;
 }
 
-.hiw {
-  width: 30%;
-  text-align: center;
-  border: 2px solid black;
-  background-color: whitesmoke;
-  box-shadow: 7px 7px 3px black;
-  position: absolute;
-  top: 580px;
-  left: 70px;
+.tableCell {
+  background-color: lightyellow;
 }
 
-.impact {
-  width: 30%;
-  text-align: center;
-  border: 2px solid black;
-  background-color: whitesmoke;
-  box-shadow: 10px 10px 5px black;
-  position: absolute;
-  top: 880px;
-  right: 50px;
-}
-
-.gitin {
-  width: 30%;
-  text-align: center;
-  border: 2px solid black;
-  background-color: whitesmoke;
-  box-shadow: 10px 10px 5px black;
-  position: absolute;
-  top: 1180px;
-  left: 70px;
-}
-
-.image1 {
-  width: 550px;
+.miami {
+  width: 330px;
   height: auto;
   position: absolute;
-  top: 485px;
-  right: 170px;
+  left: 15px;
+  top: 335px;
 }
 
-.image2 {
-  width: 500px;
-  height: auto;
+.vid1 {
   position: absolute;
-  top: 765px;
-  left: 50px;
+  bottom: 0px;
+  left: 15px;
 }
 
-.image3 {
-  width: 600px;
+.vid2 {
+  position: absolute;
+  bottom: 0px;
+  right: 15px;
+}
+
+.stats {
+  font-size: 20pt;
+  margin-top: 50px;
+  background-color: black;
+  border: 1px solid lightyellow;
+  border-collapse: separate;
+  border-spacing: 5px;
+  border-style: outset;
+  padding: 2px;
+}
+
+.barca {
+  width: 330px;
   height: auto;
   position: absolute;
-  top: 1067px;
-  right: 140px;
+  right: 15px;
+  top: 333px;
+}
+
+.link1 {
+  position: absolute;
+  bottom: 0px;
+  left: 500px;
+}
+
+.link2 {
+  position: absolute;
+  right: 500px;
+  bottom: 0px;
+}
+
+a:link {
+  font-size: 16pt;
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: blue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:hover {
+  color: lightyellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: lightblue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 420px) {
+  /* Base styles for all screen sizes */
+  .body {
+    background-color: lightskyblue;
+    font-size: 16px; /* Adjust the font size for readability on smaller screens */
+  }
+
+  .header {
+    font-size: 24pt; /* Decrease the header font size for smaller screens */
+  }
+
+  /* Media query for screens with a maximum width of 600px (typical mobile screens) */
+  @media screen and (max-width: 600px) {
+    .text1,
+    .text2 {
+      width: 90%; /* Make text paragraphs take up 90% of the screen width */
+      margin: 10px auto; /* Center-align the text paragraphs */
+      position: static; /* Remove absolute positioning */
+      padding: 10px; /* Reduce padding for smaller screens */
+      font-size: 14px; /* Adjust text size for readability */
+    }
+
+    .miami,
+    .barca {
+      width: 90%; /* Make images take up 90% of the screen width */
+      margin: 10px auto; /* Center-align the images */
+      position: static; /* Remove absolute positioning */
+    }
+
+    .vid1,
+    .vid2 {
+      width: 90%; /* Make videos take up 90% of the screen width */
+      margin: 10px auto; /* Center-align the videos */
+      position: static; /* Remove absolute positioning */
+    }
+
+    .link1,
+    .link2 {
+      position: static; /* Remove absolute positioning for links */
+      display: block; /* Make links full-width for better touch accessibility */
+      text-align: center; /* Center-align the links */
+      margin: 10px auto; /* Center-align the links */
+    }
+
+    /* Additional styles for the table at smaller screens if needed */
+    .stats {
+      width: 90%; /* Make the table take up 90% of the screen width */
+      margin: 10px auto; /* Center-align the table */
+      font-size: 14px; /* Adjust table text size for readability */
+    }
+  }
 }
