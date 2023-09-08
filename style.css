@@ -130,44 +130,44 @@ a:active {
   text-decoration: underline;
 }
 
-/* Media query for screens with a maximum width of 600px (typical mobile screens) */
+
   @media screen and (max-width: 600px) {
     .text1,
     .text2 {
-      width: 90%; /* Make text paragraphs take up 90% of the screen width */
-      margin: 10px auto; /* Center-align the text paragraphs */
-      position: static; /* Remove absolute positioning */
-      padding: 10px; /* Reduce padding for smaller screens */
-      font-size: 14px; /* Adjust text size for readability */
+      width: 90%; 
+      margin: 10px auto; 
+      position: static; 
+      padding: 10px; 
+      font-size: 14px; 
     }
 
     .miami,
     .barca {
-      width: 90%; /* Make images take up 90% of the screen width */
-      margin: 10px auto; /* Center-align the images */
-      position: static; /* Remove absolute positioning */
+      width: 90%; 
+      margin: 10px auto; 
+      position: static; 
     }
 
     .vid1,
     .vid2 {
-      width: 90%; /* Make videos take up 90% of the screen width */
-      margin: 10px auto; /* Center-align the videos */
-      position: static; /* Remove absolute positioning */
+      width: 90%; 
+      margin: 10px auto; 
+      position: static; 
     }
 
     .link1,
     .link2 {
-      position: static; /* Remove absolute positioning for links */
-      display: block; /* Make links full-width for better touch accessibility */
-      text-align: center; /* Center-align the links */
-      margin: 10px auto; /* Center-align the links */
+      position: static; 
+      display: block; 
+      text-align: center; 
+      margin: 10px auto; 
     }
 
-    /* Additional styles for the table at smaller screens if needed */
+    
     .stats {
-      width: 90%; /* Make the table take up 90% of the screen width */
-      margin: 10px auto; /* Center-align the table */
-      font-size: 14px; /* Adjust table text size for readability */
+      width: 90%;
+      margin: 10px auto; 
+      font-size: 14px; 
     }
   }
 }
